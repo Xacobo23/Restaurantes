@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edelweiss</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <header id="main-header">
+        <nav>
+            <a href="#main-header">Inicio</a>
+            <a href="#nuestra-carta">Carta</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <header id="scroll-header">
+        <a href="#main-header">
+            <img src="logo.svg" alt="Logo del Restaurante"></a>
+        <nav>
+            <a href="#main-header">Inicio</a>
+            <a href="#nuestra-carta">Carta</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección principal (Hero) -->
+        <section class="hero" id="inicio">
+            <a href="#nuestra-carta"><img src="logo.svg" alt="Logo"></a>
+
+            <h2>La comida tradicional alemana renovada</h2>
+            <p>Disfruta de una experiencia única con ingredientes frescos y tradicionales.</p>
+
+            <button class="reserve-btn" onclick="openModal()">Hacer una reserva</button>
+
+
+
+            <!-- Modal para el formulario de reserva -->
+            <div class="modal" id="reservationModal">
+                <div class="modal-content">
+                    <button class="close-btn" onclick="closeModal()">×</button>
+                    <h2>Reserva una mesa</h2>
+                    <form id="reservationForm">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="people">Número de personas:</label>
+                        <select id="people" name="people" required>
+                            <option value="1">1 Persona</option>
+                            <option value="2">2 Personas</option>
+                            <option value="3">3 Personas</option>
+                            <option value="4">4 Personas</option>
+                            <option value="5">5 Personas</option>
+                            <option value="6">6 Personas</option>
+                        </select>
+
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <label for="time">Hora:</label>
+                        <input type="time" id="time" name="time" required>
+
+                        <button id="reserva-btn" type="submit">Reservar</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- Sección Historia -->
+        <section class="historia" id="historia">
+            <h2>Nuestra Historia</h2>
+            <p>Edelweiss fue fundado en 2010 en el corazón de la ciudad, inspirado en la rica herencia culinaria de
+                Alemania y
+                la belleza de sus paisajes alpinos. Desde sus inicios, nuestro restaurante ha sido un refugio para los
+                amantes de
+                la auténtica cocina alemana, ofreciendo una experiencia gastronómica que celebra la tradición y la
+                calidad.</p>
+                <br>
+            <p>En Edelweiss, cada plato está elaborado con recetas familiares que han sido transmitidas a lo
+                largo de generaciones. Nuestros chefs utilizan ingredientes frescos y locales, combinando sabores
+                robustos con técnicas tradicionales para crear delicias como el suculento schnitzel, el aromático
+                sauerkraut y los irresistibles pretzels recién horneados.</p>
+                <br>
+
+            <p>Nos enorgullece brindar a nuestros clientes un ambiente cálido y acogedor, decorado con toques rústicos
+                que
+                evocan las encantadoras cabañas de montaña alemanas. Aquí, cada comida es una celebración, donde la
+                buena
+                compañía y la excelente comida se entrelazan. En Edelweiss, no solo servimos comida; creamos momentos
+                memorables. Cada bocado cuenta una historia y cada brindis es un homenaje a la rica cultura alemana.</p>
+
+
+        </section>
+
+        <section id="nuestra-carta">
+            <h2>Nuestra Carta</h2>
+            <div id="menu">
+                <img src="esquinaArriba.svg" alt="">
+                <div class="menu-section">
+                    <div class="menu-column">
+                        <p>Aperitivo</p>
+                        <div class="menu-item">
+                            <span>Tabla de embutidos alemanes</span>
+                            <span class="price">8,50 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Ensaladilla alemana</span>
+                            <span class="price">6,50 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Salchichas alemanas con chucrut</span>
+                            <span class="price">7,50 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Sopa de patata y puerro al estilo alemán</span>
+                            <span class="price">5,95 €</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="menu-column">
+                        <p>Principal</p>
+                        <div class="menu-item">
+                            <span>Codillo de cerdo al estilo bávaro</span>
+                            <span class="price">15,95 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo de cerdo crujiente con salsa de cerveza negra</span>
+                            <span class="price">16,50 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo de cerdo con col lombarda</span>
+                            <span class="price">17,00 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo braseado en cerveza y miel</span>
+                            <span class="price">18,50 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo de cerdo con gravy de hierbas</span>
+                            <span class="price">16,95 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo estilo Oktoberfest</span>
+                            <span class="price">19,50 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo a la parrilla con repollo agrio</span>
+                            <span class="price">17,50 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo al estilo suabo</span>
+                            <span class="price">18,00 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo con mostaza dulce</span>
+                            <span class="price">16,50 €</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span>Codillo de cerdo con salsa de cebolla caramelizada</span>
+                            <span class="price">17,95 €</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="menu-column">
+                        <p>Postres</p>
+                        <div class="menu-item">
+                            <span>Selva negra</span>
+                            <span class="price">5,95 €</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Spaghettieis</span>
+                            <span class="price">6,95 €</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Strudel de Manzana</span>
+                            <span class="price">4,50 €</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Crema bávara</span>
+                            <span class="price">5,00 €</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Lebkuchen</span>
+                            <span class="price">3,50 €</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="esquinaAbaixo.svg" alt="">
+            </div>
+        </section>
+
+        <div id="galeria">
+            <div class="swiper-container main-slider loading">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/codillo1.jpg)">
+                            <img src="img/codillo1.jpg" class="entity-img" />
+                        </figure>
+                        <div class="content">
+                            <span class="caption"></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/codillo2.jpg)">
+                            <img src="img/codillo2.jpg" class="entity-img" />
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/codillo3.jpg)">
+                            <img src="img/codillo3.jpg" class="entity-img" />
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/ensaladilla.webp)">
+                            <img src="img/ensaladilla.webp" class="entity-img" />
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/postre.webp)">
+                            <img src="img/postre.webp" class="entity-img" />
+                        </figure>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+
+            <!-- Thumbnail navigation -->
+            <div class="swiper-container nav-slider loading">
+                <div class="swiper-wrapper" role="navigation">
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/codillo1.jpg)">
+                            <img src="img/codillo1.jpg" class="entity-img" />
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/codillo2.jpg)">
+                            <img src="img/codillo2.jpg" class="entity-img" />
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/codillo3.jpg)">
+                            <img src="img/codillo3.jpg" class="entity-img" />
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/ensaladilla.webp)">
+                            <img src="img/ensaladilla.webp" class="entity-img" />
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide-bgimg" style="background-image:url(img/postre.webp)">
+                            <img src="img/postre.webp" class="entity-img" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section></section>
+
+    </main>
+
+    <footer>
+        <!-- Logo y Dirección -->
+        <div class="info">
+            <div class="logo">Bellagio</div>
+            <p>Av. Onze de Setembre, 152, 08208<br>Sabadell, Barcelona</p>
+        </div>
+
+        <!-- Horarios -->
+        <div class="horarios">
+            <h4>Horarios</h4>
+            <p><strong>Lunes a Jueves</strong><br>13:00 - 16:00 | 20:00 - 23:00</p>
+            <p><strong>Martes</strong><br>13:00 - 16:00</p>
+            <p><strong>Viernes a Domingo</strong><br>13:00 - 16:00 | 20:00 - 00:00</p>
+            <p><em>Lunes tarde y martes tarde cerrado</em></p>
+        </div>
+
+        <!-- Contacto -->
+        <div class="contacto">
+            <h4>Número para reservar:</h4>
+            <p><a href="tel:+34934227131">+34 934 227 131</a></p>
+            <p><a href="tel:+34636771014">+34 636 771 014</a></p>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+<script src="script.js"></script>
+
+<script>
+    // Función para manejar el scroll
+    window.addEventListener('scroll', () => {
+        const body = document.body;
+        const heroSection = document.querySelector('.hero');
+        const historiaSection = document.querySelector('.historia');
+
+
+
+        // Mostrar la sección "Historia" cuando el usuario hace scroll hasta ella
+        const historiaPosition = historiaSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (historiaPosition < windowHeight - 100) {
+            historiaSection.classList.add('show');
+        }
+    });
+
+    // Función para abrir el modal
+    function openModal() {
+        document.getElementById('reservationModal').style.display = 'flex';
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        document.getElementById('reservationModal').style.display = 'none';
+    }
+
+    // Manejar el envío del formulario
+    document.getElementById('reservationForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita el envío del formulario por defecto
+        alert('¡Reserva realizada con éxito!');
+        closeModal(); // Cierra el modal tras la reserva
+    });
+
+    // script.js
+    window.addEventListener("scroll", function () {
+        const scrollHeader = document.getElementById("scroll-header");
+        if (window.scrollY > 700) { // Muestra el encabezado cuando el scroll es mayor a 100px
+            scrollHeader.classList.add("visible");
+        } else {
+            scrollHeader.classList.remove("visible");
+        }
+    });
+
+</script>
