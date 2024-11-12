@@ -18,7 +18,7 @@
             <a href="#main-header">Inicio</a>
             <a href="#nuestra-carta">Carta</a>
             <a href="#galeria">Galería</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto" onclick="openModalContacto()">Contacto</a>
         </nav>
     </header>
     <header id="scroll-header">
@@ -28,7 +28,7 @@
             <a href="#main-header">Inicio</a>
             <a href="#nuestra-carta">Carta</a>
             <a href="#galeria">Galería</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto" onclick="openModalContacto()">Contacto</a>
         </nav>
     </header>
 
@@ -74,6 +74,30 @@
                 </div>
             </div>
 
+            <div class="modalGrande" id="modalContacto">
+                <div class="modal-content-todo">
+                    <div id="formulario">
+                        <button class="close-btn" onclick="closeModalContacto()">X</button>
+
+                        <h2>Hablanos</h2>
+                        <form id="reservationForm">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" placeholder="Nombre y apellidos" required>
+
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@Edelweiss.de" required>
+
+                            <label for="people">Mensaje:</label>
+
+                            <textarea name="" id="" cols="60" rows="15" style="resize: none; width: 100%; padding: 8px;"
+                                required></textarea>
+
+                            <button id="reserva-btn" type="submit"> Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 
@@ -82,25 +106,47 @@
         <!-- Sección Historia -->
         <section class="historia" id="historia">
             <h2>Nuestra Historia</h2>
-            <p>Edelweiss fue fundado en 2010 en el corazón de la ciudad, inspirado en la rica herencia culinaria de
-                Alemania y
-                la belleza de sus paisajes alpinos. Desde sus inicios, nuestro restaurante ha sido un refugio para los
-                amantes de
-                la auténtica cocina alemana, ofreciendo una experiencia gastronómica que celebra la tradición y la
-                calidad.</p>
-                <br>
-            <p>En Edelweiss, cada plato está elaborado con recetas familiares que han sido transmitidas a lo
-                largo de generaciones. Nuestros chefs utilizan ingredientes frescos y locales, combinando sabores
-                robustos con técnicas tradicionales para crear delicias como el suculento schnitzel, el aromático
-                sauerkraut y los irresistibles pretzels recién horneados.</p>
-                <br>
+            <div id="historiaDiv">
+                <div id="historiaText">
+                    <p>Edelweiss fue fundado en 2010 en el corazón de la ciudad, inspirado en la rica herencia culinaria
+                        de
+                        Alemania y
+                        la belleza de sus paisajes alpinos. Desde sus inicios, nuestro restaurante ha sido un refugio
+                        para
+                        los
+                        amantes de
+                        la auténtica cocina alemana, ofreciendo una experiencia gastronómica que celebra la tradición y
+                        la
+                        calidad.</p>
+                    <br>
+                    <p>En Edelweiss, cada plato está elaborado con recetas familiares que han sido transmitidas a lo
+                        largo de generaciones. Nuestros chefs utilizan ingredientes frescos y locales, combinando
+                        sabores
+                        robustos con técnicas tradicionales para crear delicias como el suculento schnitzel, el
+                        aromático
+                        sauerkraut y los irresistibles pretzels recién horneados.</p>
+                    <br>
 
-            <p>Nos enorgullece brindar a nuestros clientes un ambiente cálido y acogedor, decorado con toques rústicos
-                que
-                evocan las encantadoras cabañas de montaña alemanas. Aquí, cada comida es una celebración, donde la
-                buena
-                compañía y la excelente comida se entrelazan. En Edelweiss, no solo servimos comida; creamos momentos
-                memorables. Cada bocado cuenta una historia y cada brindis es un homenaje a la rica cultura alemana.</p>
+                    <p>Nos enorgullece brindar a nuestros clientes un ambiente cálido y acogedor, decorado con toques
+                        rústicos
+                        que
+                        evocan las encantadoras cabañas de montaña alemanas. Aquí, cada comida es una celebración, donde
+                        la
+                        buena
+                        compañía y la excelente comida se entrelazan. En Edelweiss, no solo servimos comida; creamos
+                        momentos
+                        memorables. Cada bocado cuenta una historia y cada brindis es un homenaje a la rica cultura
+                        alemana.
+                    </p>
+                </div>
+                <div id="imgHistoria">
+                    <img src="img/Mapa-Antiguo-Germania_0.jpg" alt="">
+                    <a href="">
+                        <button>Ver toda la historia</button>
+                    </a>
+                </div>
+
+            </div>
 
 
         </section>
@@ -213,9 +259,36 @@
                             <span class="price">3,50 €</span>
                         </div>
                     </div>
+
+                    <div class="menu-column">
+                        <p>Bebidas</p>
+                        <div class="menu-item">
+                            <span>Cerveza Pilsner</span>
+                            <span class="price">4,00 €</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Weißbier</span>
+                            <span class="price">4,50 €</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Glühwein</span>
+                            <span class="price">3,50 €</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Jägertee</span>
+                            <span class="price">3,00 €</span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Apfelschorle</span>
+                            <span class="price">2,50 €</span>
+                        </div>
+                    </div>
+
                 </div>
                 <img src="esquinaAbaixo.svg" alt="">
             </div>
+
+            <button id="fullCarta">Ver toda la carta</button>
         </section>
 
         <div id="galeria">
@@ -378,6 +451,15 @@
     // Función para cerrar el modal
     function closeModal() {
         document.getElementById('reservationModal').style.display = 'none';
+    }
+
+    function openModalContacto() {
+        document.getElementById('modalContacto').style.display = 'flex';
+    }
+
+    // Función para cerrar el modal
+    function closeModalContacto() {
+        document.getElementById('modalContacto').style.display = 'none';
     }
 
     // Manejar el envío del formulario
