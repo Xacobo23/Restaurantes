@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body">
 
 
 
@@ -472,7 +472,7 @@
     // script.js
     window.addEventListener("scroll", function () {
         const scrollHeader = document.getElementById("scroll-header");
-        if (window.scrollY > 700) { // Muestra el encabezado cuando el scroll es mayor a 100px
+        if (window.scrollY > 500) { // Muestra el encabezado cuando el scroll es mayor a 100px
             scrollHeader.classList.add("visible");
         } else {
             scrollHeader.classList.remove("visible");

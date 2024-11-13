@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('img/fondo.webp') no-repeat center center fixed;
+    background-size: cover;
+    transition: filter 0.3s ease;
+    /* Transición para el efecto de desenfoque */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #galeria {
+    width: 100%;
+    padding: 100px;
+    margin-bottom: 1000px;
+  }
+  
+  /* Encabezado */
+  
+  
+  header img {
+    width: 80px;
+  }
+  
+  header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+  }
+  
+  /* Estilo para el encabezado principal */
+  #main-header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    opacity: 1;
+  
+  }
+  
+  #main-header nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #main-header nav a {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+  }
+  
+  /* Estilo para el encabezado de scroll */
+  #scroll-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateY(-100%);
+    /* Oculto inicialmente */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Mostrar el encabezado de scroll cuando se añade la clase 'visible' */
+  #scroll-header.visible {
+    transform: translateY(0);
+  }
+  
+  nav a {
+    color: #f0d290;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    transform: scale(1);
+  }
+  
+  nav a:hover {
+    color: #fff;
+    transition: transform 0.3s;
+    transform: scale(1.2);
+  }
+  
+  /* Sección principal (Hero) */
+  .hero {
+    text-align: center;
+    padding: 120px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero img {
+    width: 300px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+  
+  }
+  
+  .hero img:hover {
+    transition: transform 0.5s;
+    transform: scale(1.2);
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+ 
+  
+  footer {
+    background-color: #111;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #aaa;
+    flex-wrap: wrap;
+    margin-top: 1000px;
+  }
+  
+  footer .logo {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    color: #f0d290;
+    margin-bottom: 20px;
+  }
+  
+  footer .info,
+  footer .horarios,
+  footer .contacto {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  footer h4 {
+    color: #f0d290;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  footer p,
+  footer a {
+    font-size: 0.9em;
+    color: #aaa;
+    text-decoration: none;
+    line-height: 1.6;
+  }
+  
+  footer a:hover {
+    color: #f0d290;
+  }
+  
+  /* Redes sociales */
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #f0d290;
+  }
+  
+  
+  
+  #main-historia{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 1500px;
+    
+    margin: auto;
+  }
+
+  .parrafos{
+    margin: 100px;
+    margin-top: 0px;
+  }
+
+  #parrafo1{
+    padding: 20px;
+  }
+  
+  .sinScroll{
+    overflow: hidden;
+  }
