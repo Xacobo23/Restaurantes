@@ -307,8 +307,9 @@ nav a:hover {
 
 /* Clase para mostrar la sección Historia */
 .show {
-  opacity: 1;
+  opacity: 1 !important;
   transform: translateY(0);
+
 }
 
 .reserve-btn {
@@ -763,4 +764,33 @@ video{
 .horarios strong {
   color: #f5f5f5;                /* Color para los días */
   font-weight: bold;
+}
+
+.btnReserva-Scroll{
+  position: fixed;
+  opacity: 0;
+  top: 900px;
+  left: 50px;
+  width: 180px;
+  height: 60px;
+  background-color: #000;
+  color: #f0d290;
+  padding: 10px 20px;
+  z-index: 2000;
+  border-radius: 50px;
+  transition: transform 0.3s;
+  transform: scale(1);
+  border: solid;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  
+}
+
+
+.btnReserva-Scroll:hover {
+  background-color: #000;
+  color: #fff;
+  border: solid;
+  transition: transform 0.3s;
+  transform: scale(1.2);
 }

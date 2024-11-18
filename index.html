@@ -375,7 +375,7 @@
             </div>
         </div>
 
-        
+        <button class="btnReserva-Scroll">Hacer una reserva</button>
 
     </main>
 
@@ -444,6 +444,7 @@
         const body = document.body;
         const heroSection = document.querySelector('.hero');
         const historiaSection = document.querySelector('.historia');
+        const btnReserva = document.querySelector('.btnReserva-Scroll')
 
 
 
@@ -451,8 +452,14 @@
         const historiaPosition = historiaSection.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
+
+
         if (historiaPosition < windowHeight - 100) {
-            historiaSection.classList.add('show');
+            historiaSection.classList.add('show')
+            btnReserva.classList.add('show');
+        }
+        else{
+            btnReserva.classList.remove('show')
         }
     });
 
