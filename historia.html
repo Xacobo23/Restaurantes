@@ -15,7 +15,7 @@
 <body>
     <header id="scroll-header">
         <a href="#main-header">
-            <img src="logo.svg" alt="Logo del Restaurante"></a>
+            <img src="img/logo.svg" alt="Logo del Restaurante"></a>
         <nav>
             <a href="./index.html#main-header">Inicio</a>
             <a href="./index.html#nuestra-carta">Carta</a>
@@ -122,9 +122,12 @@
     </div>
     <div class="prevnext">
         <button class="prevnext-button" id="prev"></button>
-        <button class="prevnext-button" id="next"> </button>
+        <button class="prevnext-button" id="next"></button>
     </div>
 
+    <div class="tooltip-popup" id="tooltip-popup">
+        <span class="tooltip-popup-text">← Usa los botones para navegar</span>
+      </div>
 
     <footer>
         <!-- Logo y Dirección -->
@@ -156,9 +159,25 @@
         </div>
     </footer>
 
+<script>// Esperar a que el contenido esté cargado
+    document.addEventListener("DOMContentLoaded", function () {
+      // Obtener el tooltip
+      const tooltip = document.getElementById("tooltip-popup");
+      
+      // Mostrar el tooltip al cargar la página
+      tooltip.classList.add("show");
+    
+      // Ocultar el tooltip después de 5 segundos
+      setTimeout(() => {
+        tooltip.classList.remove("show");
+      }, 3000); // 5000 ms = 5 segundos
+    });
+    </script>
+
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
-    <script src="greensock-animated-slider/dist/script.js"></script>
+    <script src="scriptHistoria.js"></script>
 </body>
 
 </html>

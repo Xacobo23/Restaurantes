@@ -147,14 +147,22 @@ nav a:hover {
   color: #f0d290;
 }
 
+#historiaDiv{
+  width: 1000px;
+  display: flex;
+  justify-self: center;
+}
+
 .historia p {
-  font-size: 1em;
+  font-size: 1.3em;
   line-height: 1.5;
-  max-width: 800px;
+  max-width: 400px;
   margin: auto;
   color: #ddd;
   text-align: start;
+  height: 300px;
 }
+
 .historia img{
   height: 300px;
   
@@ -201,7 +209,7 @@ nav a:hover {
 #nuestra-carta {
   background-color: #F4F4F4;
   /* Fondo oscuro */
-  color: #878787;
+  color: #131313;
   padding: 100px;
   width: fit-content;
   margin: 0 auto;
@@ -217,7 +225,7 @@ nav a:hover {
 
 #nuestra-carta h2 {
   font-size: 2em;
-  color: #878787;
+  color: #2e2e2e;
   /* Color dorado para el título */
   margin-bottom: 40px;
   font-family: 'Georgia', serif;
@@ -342,8 +350,7 @@ nav a:hover {
 }
 
 .modal-content {
-  background-color: #fff;
-  color: #333;
+  background-color: #333;
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
@@ -372,8 +379,6 @@ nav a:hover {
 }
 
 .modal-content button {
-  background-color: #000;
-  color: #fff;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
@@ -425,6 +430,7 @@ footer .horarios,
 footer .contacto {
   flex: 1;
   min-width: 200px;
+  background-color: transparent;
 }
 
 footer h4 {
@@ -607,6 +613,7 @@ footer a:hover {
   position: absolute;
   z-index: 1000;
   position: fixed;
+  top: 0;
 }
 
 .modal-content-todo {
@@ -618,10 +625,13 @@ footer a:hover {
   color: #333;
   padding: 20px;
   border-radius: 10px;
-  max-width: fit-content;
-  width: 100%;
+  width: 1000px;
   text-align: center;
   position: relative;
+  background-color: #333;
+  color: #f0d290;
+  border: #F0D290 solid 5px;
+
 }
 
 .modal-content-todo h2 {
@@ -651,7 +661,56 @@ footer a:hover {
 }
 
 #formulario {
-  width: 100%;
+  width: 400px;
+}
+
+
+
+#reservationForm {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+video{
+  border: #F0D290 solid 5px;
+  border-radius: 20px;
+}
+
+.contact-container{
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.contact-container .contacto a{
+  color: #fff;
+}
+
+.contact-container .horarios p{
+  color: #fff;
+}
+
+#reserva-btn {
+  padding: 10px 20px;
+  width: fit-content;
+  margin-top: 20px;
+  background-color: #fff;
+
+}
+
+#reserva-btn:hover {
+  padding: 10px 20px;
+  width: fit-content;
+  margin-top: 20px;
+  background-color: #F0D290;
+  color: #000;
+
 }
 
 .close-btn {
@@ -666,37 +725,42 @@ footer a:hover {
   border-width: 2px;
   border-style: solid;
   background-color: #fff;
-  color: #000;
 
   padding: 0px;
 }
 
 .close-btn:hover {
-  background-color: #000;
-  color: white;
+  background-color: #F0D290;
+  color: #000;
 }
 
-#reservationForm {
+
+.horarios {
+  background-color: #333;        /* Fondo oscuro */
+  color: #f5f5f5;                /* Texto claro */
+  width: 300px;                  /* Ancho del contenedor */
+  padding: 20px;                 /* Espaciado interno */
+  border-radius: 8px;            /* Bordes redondeados */
+  text-align: center;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-
+  justify-self: center;
 }
 
-#reserva-btn {
-  padding: 10px 20px;
-  width: fit-content;
-  margin-top: 20px;
-  background-color: transparent;
-
+.horarios h4 {
+  font-size: 1.5em;
+  color: #F0D290;                /* Color dorado para el título */
+  margin-bottom: 15px;            /* Espacio debajo del título */
 }
 
-#reserva-btn:hover {
-  padding: 10px 20px;
-  width: fit-content;
-  margin-top: 20px;
-  background-color: #000;
-  color: #fff;
-
+.horarios p {
+  font-size: 1em;
+  line-height: 1.6;              /* Espacio entre líneas */
+  margin: 6px 0;                /* Espacio entre párrafos */
 }
 
-
+.horarios strong {
+  color: #f5f5f5;                /* Color para los días */
+  font-weight: bold;
+}

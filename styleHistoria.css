@@ -526,3 +526,36 @@
   background-color: #000;
   color: white;
 }
+
+
+
+/* Contenedor del tooltip emergente */
+.tooltip-popup {
+  position: fixed; /* Siempre visible en la pantalla */
+  top: 440px; /* Ubicación en la parte superior de la pantalla */
+  left: 82%; /* Centrado horizontalmente */
+  transform: translateX(-50%); /* Ajusta el centro */
+  background-color: #fff; /* Fondo oscuro */
+  color: #333; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño del texto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+  opacity: 0; /* Inicialmente transparente */
+  visibility: hidden; /* Ocultar inicialmente */
+  z-index: 1000; /* Sobre otros elementos */
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Transición suave */
+  border: #f0d290 solid 1px;
+  border-radius: 50px;
+}
+
+/* Texto del tooltip */
+.tooltip-popup-text {
+  white-space: nowrap; /* Evita que el texto haga saltos de línea */
+}
+
+/* Clase para mostrar el tooltip */
+.tooltip-popup.show {
+  opacity: 1; /* Hacer visible */
+  visibility: visible;
+}

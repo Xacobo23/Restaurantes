@@ -77,7 +77,7 @@
             <div class="modalGrande" id="modalContacto">
                 <div class="modal-content-todo">
                     <div id="formulario">
-                        <button class="close-btn" onclick="closeModalContacto()">X</button>
+                        <button class="close-btn" onclick="closeModalContacto()">x</button>
 
                         <h2>Hablanos</h2>
                         <form id="reservationForm">
@@ -95,7 +95,35 @@
                             <button id="reserva-btn" type="submit"> Enviar</button>
                         </form>
                     </div>
+                    <hr>
+                    <div class="contact-container">
+                        
+                        <div class="horarios">
+                            <h4>Horarios</h4>
+                            <p><strong>Lunes a Jueves</strong><br>13:00 - 16:00 | 20:00 - 23:00</p>
+                            <p><strong>Martes</strong><br>13:00 - 16:00</p>
+                            <p><strong>Viernes a Domingo</strong><br>13:00 - 16:00 | 20:00 - 00:00</p>
+                        </div>
+                
+                        <!-- Contacto -->
+                        <div class="contacto">
+                            <h4>Número para reservar:</h4>
+                            <p style="margin: 20px;"><a href="tel:+34934227131">+34 934 227 131</a></p>
+                        </div>
+                        <div class="map-container">
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d123271.37428045596!2d61.05585902783202!3d41.56098905223677!3m2!1i1024!2i768!4f13.1!2m1!1slondon%20eye!5e1!3m2!1ses!2sus!4v1730887835564!5m2!1ses!2sus"
+                            width="400"
+                            height="200"
+                            style=""
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                        </div>
+                      </div>
                 </div>
+                
             </div>
 
         </section>
@@ -108,7 +136,7 @@
             <h2>Nuestra Historia</h2>
             <div id="historiaDiv">
                 <div id="historiaText">
-                    <p>Edelweiss fue fundado en 2010 en el corazón de la ciudad, inspirado en la rica herencia culinaria
+                    <p>Edelweiss fue fundado en 1960 en el corazón de la ciudad, inspirado en la rica herencia culinaria
                         de
                         Alemania y
                         la belleza de sus paisajes alpinos. Desde sus inicios, nuestro restaurante ha sido un refugio
@@ -118,26 +146,8 @@
                         la auténtica cocina alemana, ofreciendo una experiencia gastronómica que celebra la tradición y
                         la
                         calidad.</p>
-                    <br>
-                    <p>En Edelweiss, cada plato está elaborado con recetas familiares que han sido transmitidas a lo
-                        largo de generaciones. Nuestros chefs utilizan ingredientes frescos y locales, combinando
-                        sabores
-                        robustos con técnicas tradicionales para crear delicias como el suculento schnitzel, el
-                        aromático
-                        sauerkraut y los irresistibles pretzels recién horneados.</p>
-                    <br>
-
-                    <p>Nos enorgullece brindar a nuestros clientes un ambiente cálido y acogedor, decorado con toques
-                        rústicos
-                        que
-                        evocan las encantadoras cabañas de montaña alemanas. Aquí, cada comida es una celebración, donde
-                        la
-                        buena
-                        compañía y la excelente comida se entrelazan. En Edelweiss, no solo servimos comida; creamos
-                        momentos
-                        memorables. Cada bocado cuenta una historia y cada brindis es un homenaje a la rica cultura
-                        alemana.
-                    </p>
+                    
+                    
                 </div>
                 <div id="imgHistoria">
                     <img src="img/Mapa-Antiguo-Germania_0.jpg" alt="">
@@ -151,10 +161,18 @@
 
         </section>
 
+        <section style="display: flex; justify-content: center; margin-bottom: 200px;">
+
+            <video src="vid/Restaurant der Kulturen - Werbespot 4K (online-video-cutter.com).mp4" width="1440" autoplay muted loop>
+            
+            </video>
+
+        </section>
+
         <section id="nuestra-carta">
             <h2>Nuestra Carta</h2>
             <div id="menu">
-                <img src="esquinaArriba.svg" alt="">
+                <img src="img/esquinaArriba.svg" alt="">
                 <div class="menu-section">
                     <div class="menu-column">
                         <p>Aperitivo</p>
@@ -285,10 +303,8 @@
                     </div>
 
                 </div>
-                <img src="esquinaAbaixo.svg" alt="">
+                <img src="img/esquinaAbaixo.svg" alt="">
             </div>
-
-            <button id="fullCarta">Ver toda la carta</button>
         </section>
 
         <div id="galeria">
@@ -360,14 +376,14 @@
             </div>
         </div>
 
-        <section></section>
+        
 
     </main>
 
     <footer>
         <!-- Logo y Dirección -->
         <div class="info">
-            <div class="logo">Bellagio</div>
+            <div class="logo">Edelweiss</div>
             <p>Av. Onze de Setembre, 152, 08208<br>Sabadell, Barcelona</p>
         </div>
 
@@ -377,14 +393,12 @@
             <p><strong>Lunes a Jueves</strong><br>13:00 - 16:00 | 20:00 - 23:00</p>
             <p><strong>Martes</strong><br>13:00 - 16:00</p>
             <p><strong>Viernes a Domingo</strong><br>13:00 - 16:00 | 20:00 - 00:00</p>
-            <p><em>Lunes tarde y martes tarde cerrado</em></p>
         </div>
 
         <!-- Contacto -->
         <div class="contacto">
             <h4>Número para reservar:</h4>
             <p><a href="tel:+34934227131">+34 934 227 131</a></p>
-            <p><a href="tel:+34636771014">+34 636 771 014</a></p>
         </div>
 
         <!-- Redes Sociales -->
