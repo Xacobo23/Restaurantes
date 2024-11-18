@@ -210,11 +210,14 @@ nav a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-image: url("img/Captura\ de\ pantalla\ 2024-11-15\ 124013.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #nuestra-carta h2 {
   font-size: 2em;
-  color: #F0D290;
+  color: #878787;
   /* Color dorado para el título */
   margin-bottom: 40px;
   font-family: 'Georgia', serif;
@@ -226,6 +229,7 @@ nav a:hover {
   position: absolute;
   left: 0;
   top: 0;
+
 }
 
 #menu img:last-child {
@@ -238,6 +242,7 @@ nav a:hover {
 #menu {
   width: 800px;
   position: relative;
+  color: #000;
 }
 
 /* Contenedor de menú en dos columnas */
@@ -257,11 +262,14 @@ nav a:hover {
 
 .menu-column p {
   font-size: 1.2em;
-  color: #F0D290;
-  border-bottom: 1px dotted #444;
+  color: #E8B607;
+  border-bottom: 1px solid #444;
   padding-bottom: 5px;
   margin: 20px 0 10px;
   font-family: 'Georgia', serif;
+
+  margin-bottom: 50px;
+  
 }
 
 /* Estilo para cada elemento del menú */
@@ -271,16 +279,16 @@ nav a:hover {
   margin: 10px 0;
   font-size: 1em;
   font-family: Arial, sans-serif;
+  color: #878787;
 }
 
 .menu-item .price {
-  color: #f5d742;
+  color: #E8B607;
   /* Color dorado para el precio */
 }
 
 /* Líneas punteadas */
 .menu-item {
-  border-bottom: 1px dotted #444;
   padding-bottom: 5px;
 }
 

@@ -9,15 +9,30 @@
   
   body {
     font-family: Arial, sans-serif;
-    color: #fff;
+    color: #000;
     background: url('img/fondo.webp') no-repeat center center fixed;
     background-size: cover;
-    transition: filter 0.3s ease;
+    height: 90vh; 
+        transition: filter 0.3s ease;
     /* Transición para el efecto de desenfoque */
+    
+  }
+  body {
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #D4DAD9;
+    color: #252525;
+    overflow: hidden;
   }
   
   body::-webkit-scrollbar {
     display: none;
+  }
+
+  main{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #galeria {
@@ -74,21 +89,17 @@
     padding-right: 10px;
     padding-left: 10px;
     background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    color: #000;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    transform: translateY(-100%);
     /* Oculto inicialmente */
     transition: transform 0.3s ease-in-out;
   }
   
-  /* Mostrar el encabezado de scroll cuando se añade la clase 'visible' */
-  #scroll-header.visible {
-    transform: translateY(0);
-  }
+  
   
   nav a {
     color: #f0d290;
@@ -138,13 +149,16 @@
   footer {
     background-color: #111;
     padding: 40px 20px;
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     color: #aaa;
-    flex-wrap: wrap;
     margin-top: 1000px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
   }
   
   footer .logo {
@@ -201,7 +215,7 @@
   #main-historia{
     background-color: rgba(0, 0, 0, 0.7);
     width: 1500px;
-    
+    padding: 20px;
     margin: auto;
   }
 
@@ -231,3 +245,284 @@
   #main-historia img{
     width: 400px;
   }
+
+  #parte2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #parrafo2{
+    padding: 20px;
+    width: 700px;
+    font-size: x-large;
+  }
+
+  #main-historia div{
+    margin: 20px;
+    border: #f0d290 solid 2px;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    
+
+  }
+  
+  .card {
+    width: 90vmin;
+    height: 55vmin;
+    display: flex;
+    box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.35);
+    background-color: #fff;
+    border: #f0d290 solid 3px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .card__img {
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #img01 {
+    background-image: url("img/munich.jpg");
+  }
+  
+  #img02 {
+    background-image: url("img/jefe.png");
+  }
+  
+  #img03 {
+    background-image: url("img/alemania-restaurantes-estrella-michelin.webp");
+  }
+  #img04 {
+    background-image: url("img/GettyImages-1335808321.webp");
+  }
+  #img05 {
+    background-image: url("img/Tipos-de-cervezas-en-Alemania.jpg");
+  }
+  
+  .card__content {
+    padding: 5% 5%;
+    box-sizing: border-box;
+    width: 50%;
+  }
+  
+  .card__content-theme {
+    font-weight: 900;
+    font-size: 1.7vmin;
+  }
+  
+  .card__content-header {
+    font-weight: 900;
+    font-size: 54px;
+    font-size: 7vmin;
+    text-transform: capitalize;
+    letter-spacing: 0.01em;
+    line-height: 0.91;
+    margin: 3vmin 0 3.5vmin;
+  }
+  
+  .card__content-paragraph {
+    font-size: 1.6vmin;
+    line-height: 1.7;
+    font-weight: 300;
+    margin-bottom: 2.5vmin;
+  }
+  
+  .card__content-link {
+    color: #BA3428;
+    font-size: 1.8vmin;
+    display: block;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  .card__content-link:hover {
+    opacity: 1;
+  }
+  .card__content-link:after {
+    content: " →";
+    color: #f0d290 ;
+  }
+  
+  .prevnext {
+    position: absolute;
+    width: 4vmin;
+    height: 8vmin;
+    right: 495px;
+    bottom: 0;
+    top: -80px;
+    margin: auto 0;
+    background-color: #000;
+    color: #f0d290;
+    border: #f0d290 solid 2px;
+    border-radius: 50px;
+    
+  }
+  
+  .prevnext-button {
+    width: 100%;
+    height: 50%;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  #prev, #next {
+    position: relative;
+    cursor: pointer;
+    
+    color: #f0d290;
+
+  }
+  
+  #prev:after, #next:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #f0d290;
+
+  }
+  
+  #prev:after {
+    content: "↑";
+    color: #f0d290;
+  }
+  
+  #next:after {
+    content: "↓";
+    color: #f0d290;
+
+  }
+
+#atras{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+#atras button{
+  background-color: #000;
+  color: #f0d290;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 50px;
+  transition: transform 0.3s;
+  transform: scale(1);
+  border: solid;
+  width: fit-content;
+}
+
+
+
+#atras button:hover{
+  background-color: #000;
+    color: #fff;
+    border: solid;
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}
+
+
+
+.modalGrande {
+  display: none;
+  /* Inicialmente oculto */
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+  position: fixed;
+}
+
+.modal-content-todo {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row !important;
+  justify-content: space-around;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: fit-content;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content-todo h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content-todo label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.modal-content-todo input,
+.modal-content-todo select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content-todo button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#formulario {
+  width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 15px;
+  width: 40px;
+  text-align: center;
+
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #fff;
+  color: #000;
+
+  padding: 0px;
+}
+
+.close-btn:hover {
+  background-color: #000;
+  color: white;
+}

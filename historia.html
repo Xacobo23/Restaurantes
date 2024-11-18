@@ -6,88 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edelweiss</title>
     <link rel="stylesheet" href="styleHistoria.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
 
 </head>
 
 <body>
-    <header id="main-header">
-        <nav>
-            <a href="#main-header">Inicio</a>
-        </nav>
-        <a href="#main-header">
-            <img src="img/logo.svg" alt="Logo del Restaurante">
-        </a>
-
-    </header>
     <header id="scroll-header">
         <a href="#main-header">
             <img src="logo.svg" alt="Logo del Restaurante"></a>
         <nav>
-            <a href="#main-header">Inicio</a>
-            <a href="#nuestra-carta">Carta</a>
-            <a href="#galeria">Galería</a>
+            <a href="./index.html#main-header">Inicio</a>
+            <a href="./index.html#nuestra-carta">Carta</a>
+            <a href="./index.html#galeria">Galería</a>
             <a href="#contacto" onclick="openModalContacto()">Contacto</a>
         </nav>
     </header>
 
-    <main id="main-historia">
-        <div id="parte1">
-            <p class="parrafos" id="parrafo1">
-                Edelweiss abrió sus puertas en 1998 en un pintoresco barrio de Múnich, Alemania,
-                como un tributo a las ricas tradiciones culinarias bávaras y alpinas. Inspirado en la emblemática flor
-                "edelweiss" de los Alpes, símbolo de amor y aventura, el restaurante se propuso desde sus inicios
-                capturar
-                el espíritu de las montañas alemanas en cada detalle. Con una fachada de madera oscura decorada con
-                flores y
-                un interior rústico y acogedor, Edelweiss se convirtió rápidamente en un refugio culinario tanto para
-                locales como para turistas, que encuentran en sus platos el sabor auténtico de la cocina alemana y un
-                ambiente que evoca los días de descanso en una cabaña alpina.
-            </p>
-            <img src="img/munich.jpg" alt="">
-        </div>
-        <p class="parrafos" id="parrafo2">
-            El fundador del restaurante, Karl Weiss, un chef alemán con raíces bávaras, creció en una familia de
-            granjeros en la región de Baviera, donde aprendió el arte de la cocina con ingredientes locales y frescos, y
-            recetas transmitidas de generación en generación. Tras años trabajando en varios restaurantes de Alemania y
-            Suiza, Karl decidió volver a sus raíces para compartir con el público los sabores de su infancia y las
-            técnicas tradicionales que había perfeccionado. Así, Edelweiss no es solo un restaurante, sino también un
-            homenaje a sus ancestros y a las tradiciones culinarias alemanas que han perdurado con los años.
-        </p>
-        <p class="parrafos" id="parrafo3">
-            La carta de Edelweiss combina platos tradicionales alemanes con un toque moderno y creativo que caracteriza
-            a Karl. Entre sus especialidades están el famoso *Schweinebraten*, un asado de cerdo jugoso y especiado que
-            se sirve con *Knödel*, o albóndigas de patata, y *Sauerkraut*, el clásico chucrut alemán. Otra especialidad
-            es el *Sauerbraten*, carne de res marinada y cocida a fuego lento, acompañada de repollo rojo y puré de
-            papas. Los postres incluyen el tradicional *Apfelstrudel* y el *Käsekuchen*, una tarta de queso suave y
-            cremosa. Cada plato se prepara con ingredientes de granjas cercanas, manteniendo viva la tradición de usar
-            productos frescos y locales.
-        </p>
-        <p class="parrafos" id="parrafo4">
-            Además de la comida, Edelweiss es conocido por su cálida hospitalidad bávara. Al cruzar la puerta, los
-            clientes son recibidos por el aroma a pan horneado y especias, mientras una decoración de madera tallada,
-            fotografías antiguas de los Alpes y banderas bávaras crean un ambiente acogedor. El personal, vestido con
-            trajes tradicionales alemanes como el *Dirndl* y el *Lederhosen*, atiende a cada cliente con atención y
-            calidez, ofreciendo recomendaciones y compartiendo historias sobre los orígenes de los platos, lo cual
-            enriquece la experiencia de cada comensal.
-        </p>
-        <p class="parrafos" id="parrafo5">
-            La filosofía de Edelweiss se basa en la autenticidad y el respeto por las tradiciones culinarias alemanas.
-            Karl y su equipo trabajan de la mano con granjeros y productores locales para obtener los ingredientes más
-            frescos y apoyar a la economía local, una práctica que Karl aprendió desde joven. La cerveza, que no puede
-            faltar en un restaurante alemán, proviene de cervecerías familiares de Baviera, y se sirve en jarras heladas
-            para acompañar perfectamente cualquier plato. Esta conexión con la comunidad le ha permitido al restaurante
-            ganar una base de clientes leales que aprecian el enfoque sostenible y la dedicación de Karl.
-        </p>
-        <p class="parrafos" id="parrafo6">
-            A lo largo de los años, Edelweiss ha ganado fama no solo en Múnich, sino también entre los turistas que
-            buscan una experiencia auténtica de la cocina alemana. Desde su apertura en 1998, el restaurante ha recibido
-            múltiples reconocimientos y se ha convertido en un lugar de encuentro para aquellos que desean explorar la
-            gastronomía bávara. Para Karl, Edelweiss es un sueño hecho realidad y un lugar donde las tradiciones se
-            preservan y celebran en cada plato, transmitiendo a cada visitante el espíritu de la Baviera alpina y el
-            amor por una cocina auténtica que ha resistido el paso del tiempo.
-        </p>
+    <a href="./index.html#main-header" id="atras">
+        <button>← Atrás</button>
+    </a>
 
-    </main>
+    <div class="modalGrande" id="modalContacto">
+        <div class="modal-content-todo">
+            <div id="formulario">
+                <button class="close-btn" onclick="closeModalContacto()">X</button>
+
+                <h2>Hablanos</h2>
+                <form id="reservationForm">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre y apellidos" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@Edelweiss.de" required>
+
+                    <label for="people">Mensaje:</label>
+
+                    <textarea name="" id="" cols="60" rows="15" style="resize: none; width: 100%; padding: 8px;"
+                        required></textarea>
+
+                    <button id="reserva-btn" type="submit"> Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide active">
+        <div class="card">
+            <div class="card__img" id="img01"> </div>
+            <div class="card__content">
+                <h2 class="card__content-header">Origen</h2>
+                <p class="card__content-paragraph">Edelweiss abrió sus puertas en 1998 en un barrio pintoresco de
+                    Múnich, Alemania, como un homenaje a las tradiciones culinarias bávaras y alpinas. Inspirado en la
+                    flor "edelweiss", símbolo de amor y aventura, el restaurante se diseñó para evocar el espíritu de
+                    las montañas alemanas. Su fachada de madera oscura y decoración floral, junto con un interior
+                    rústico y acogedor, rápidamente lo convirtieron en un destino favorito para locales y turistas que
+                    buscan el auténtico sabor de la cocina alemana.</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="card">
+            <div class="card__img" id="img02"></div>
+            <div class="card__content">
+                <h2 class="card__content-header">Fundador</h2>
+                <p class="card__content-paragraph">El restaurante fue fundado por Karl Weiss, un chef bávaro que creció
+                    en una familia de granjeros y aprendió desde joven a valorar los ingredientes locales y las recetas
+                    tradicionales. Después de trabajar en reconocidos restaurantes de Alemania y Suiza, Karl decidió
+                    volver a sus raíces y abrir Edelweiss, no solo como un negocio, sino como un tributo a la herencia
+                    culinaria de su región. Cada detalle del restaurante, desde los platos hasta el ambiente, refleja
+                    este compromiso con la autenticidad.</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="card">
+            <div class="card__img" id="img03"></div>
+            <div class="card__content">
+                <h2 class="card__content-header">Carta</h2>
+                <p class="card__content-paragraph">La carta de Edelweiss ofrece una variedad de platos tradicionales
+                    alemanes con un toque creativo. Entre los favoritos están el Schweinebraten, un asado de cerdo con
+                    Knödel y Sauerkraut, y el Sauerbraten, carne marinada acompañada de repollo rojo y puré de papas.
+                    Los postres, como el Apfelstrudel y el Käsekuchen, son preparados con ingredientes de granjas
+                    cercanas, manteniendo la frescura y calidad que caracterizan al restaurante.</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="card">
+            <div class="card__img" id="img04"></div>
+            <div class="card__content">
+                <h2 class="card__content-header">Ambiente</h2>
+                <p class="card__content-paragraph">Más allá de la comida, Edelweiss se distingue por su cálida
+                    hospitalidad bávara. Al entrar, los visitantes son recibidos por un ambiente hogareño con aromas de
+                    pan horneado y especias. El personal, vestido con trajes tradicionales como Dirndl y Lederhosen,
+                    complementa la experiencia con su trato amable y conocimientos sobre los orígenes de cada plato.
+                    Esto crea una experiencia culinaria completa y auténtica.</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="card">
+            <div class="card__img" id="img05"></div>
+            <div class="card__content">
+                <h2 class="card__content-header">Filosofía</h2>
+                <p class="card__content-paragraph">La filosofía de Karl y su equipo se centra en el respeto por las
+                    tradiciones y el apoyo a los productores locales. Todos los ingredientes y cervezas provienen de
+                    granjas y cervecerías familiares de Baviera, promoviendo la sostenibilidad y una conexión con la
+                    comunidad. Esta dedicación ha hecho que Edelweiss sea reconocido no solo por su comida, sino también
+                    por su compromiso con la cultura y economía local.</p>
+                <a class="card__content-link">Read </a>
+            </div>
+        </div>
+    </div>
+    <div class="prevnext">
+        <button class="prevnext-button" id="prev"></button>
+        <button class="prevnext-button" id="next"> </button>
+    </div>
+
 
     <footer>
         <!-- Logo y Dirección -->
@@ -118,6 +155,10 @@
             <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
     </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+    <script src="greensock-animated-slider/dist/script.js"></script>
 </body>
 
 </html>
@@ -133,4 +174,13 @@
         }
     });
 
+
+    function openModalContacto() {
+        document.getElementById('modalContacto').style.display = 'flex';
+    }
+
+    // Función para cerrar el modal
+    function closeModalContacto() {
+        document.getElementById('modalContacto').style.display = 'none';
+    }
 </script>
