@@ -16,6 +16,7 @@
     <header id="main-header">
         <nav>
             <a href="./index.html#main-header">Inicio</a>
+            <a href="./index.html#historia">Historia</a>
             <a href="./index.html#nuestra-carta">Carta</a>
             <a href="./index.html#galeria">Galería</a>
             <a href="#contacto" onclick="openModalContacto()">Contacto</a>
@@ -26,6 +27,7 @@
             <img src="img/logo.svg" alt="Logo del Restaurante"></a>
         <nav>
             <a href="./index.html#main-header">Inicio</a>
+            <a href="./index.html#historia">Historia</a>
             <a href="./index.html#nuestra-carta">Carta</a>
             <a href="./index.html#galeria">Galería</a>
             <a href="#contacto" onclick="openModalContacto()">Contacto</a>
@@ -40,7 +42,7 @@
             <h2>La comida tradicional alemana renovada</h2>
             <p>Disfruta de una experiencia única con ingredientes frescos y tradicionales.</p>
 
-            <button class="reserve-btn" onclick="openModal()">Hacer una reserva</button>
+            <button class="reserve-btn shake" onclick="openModal()">Hacer una reserva</button>
 
 
 
@@ -97,32 +99,28 @@
                     </div>
                     <hr>
                     <div class="contact-container">
-                        
+
                         <div class="horarios">
                             <h4>Horarios</h4>
                             <p><strong>Lunes a Jueves</strong><br>13:00 - 16:00 | 20:00 - 23:00</p>
                             <p><strong>Martes</strong><br>13:00 - 16:00</p>
                             <p><strong>Viernes a Domingo</strong><br>13:00 - 16:00 | 20:00 - 00:00</p>
                         </div>
-                
+
                         <!-- Contacto -->
                         <div class="contacto">
                             <h4>Número para reservar:</h4>
                             <p style="margin: 20px;"><a href="tel:+34934227131">+34 934 227 131</a></p>
                         </div>
                         <div class="map-container">
-                          <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d123271.37428045596!2d61.05585902783202!3d41.56098905223677!3m2!1i1024!2i768!4f13.1!2m1!1slondon%20eye!5e1!3m2!1ses!2sus!4v1730887835564!5m2!1ses!2sus"
-                            width="400"
-                            height="200"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                          ></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.8446027348386!2d2.100085408224034!3d41.55109554349442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1732022287991!5m2!1ses!2ses"
+                                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                
+
             </div>
 
         </section>
@@ -145,8 +143,8 @@
                         la auténtica cocina alemana, ofreciendo una experiencia gastronómica que celebra la tradición y
                         la
                         calidad.</p>
-                    
-                    
+
+
                 </div>
                 <div id="imgHistoria">
                     <img src="img/Mapa-Antiguo-Germania_0.jpg" alt="">
@@ -162,8 +160,9 @@
 
         <section style="display: flex; justify-content: center; margin-bottom: 200px;">
 
-            <video src="vid/Restaurant der Kulturen - Werbespot 4K (online-video-cutter.com).mp4" width="1440" autoplay muted loop>
-            
+            <video src="vid/Restaurant der Kulturen - Werbespot 4K (online-video-cutter.com).mp4" width="1440" autoplay
+                muted loop>
+
             </video>
 
         </section>
@@ -375,7 +374,7 @@
             </div>
         </div>
 
-        <button class="btnReserva-Scroll">Hacer una reserva</button>
+        <button class="btnReserva-Scroll" onclick="openModal()">Hacer una reserva</button>
 
     </main>
 
@@ -383,7 +382,7 @@
         <!-- Logo y Dirección -->
         <div class="info">
             <div class="logo">Edelweiss</div>
-            <p>Av. Onze de Setembre, 152, 08208<br>Sabadell, Barcelona</p>
+            <p>Carrer del Pare Rodés, 4-10, 08208 <br> Sabadell, Barcelona</p>
         </div>
 
         <!-- Horarios -->
@@ -458,7 +457,7 @@
             historiaSection.classList.add('show')
             btnReserva.classList.add('show');
         }
-        else{
+        else {
             btnReserva.classList.remove('show')
         }
     });

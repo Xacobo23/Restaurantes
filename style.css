@@ -313,7 +313,7 @@ nav a:hover {
 }
 
 .reserve-btn {
-  background-color: #000;
+  background-color: #E14F59;
   color: #f0d290;
   padding: 10px 20px;
   text-decoration: none;
@@ -328,14 +328,14 @@ nav a:hover {
 
 
 .reserve-btn:hover {
-  background-color: #000;
+  background-color: #E14F59;
   color: #fff;
   border: solid;
   transition: transform 0.3s;
   transform: scale(1.2);
 }
 
-/* Estilos del modal */
+/* Estilos del G */
 .modal {
   display: none;
   /* Inicialmente oculto */
@@ -348,6 +348,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  
 }
 
 .modal-content {
@@ -358,6 +359,10 @@ nav a:hover {
   width: 90%;
   text-align: center;
   position: relative;
+  
+  background-color: #333;
+  color: #f0d290;
+  border: #F0D290 solid 5px;
 }
 
 .modal-content h2 {
@@ -773,8 +778,8 @@ video{
   left: 50px;
   width: 180px;
   height: 60px;
-  background-color: #000;
-  color: #f0d290;
+  background-color: #E14F59;
+  color: #F0D290;
   padding: 10px 20px;
   z-index: 2000;
   border-radius: 50px;
@@ -783,14 +788,34 @@ video{
   border: solid;
   transition: opacity 0.5s ease, transform 0.5s ease;
 
-  
+  animation: border-move 4s linear infinite;
+
 }
 
 
 .btnReserva-Scroll:hover {
-  background-color: #000;
+  background-color: #E14F59;
   color: #fff;
   border: solid;
   transition: transform 0.3s;
   transform: scale(1.2);
+}
+
+
+.btnReserva-Scroll::after {
+  content: ' ';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  z-index: -1;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+0% {
+  --gradient-angle: 0deg;
+}
+100% {
+  --gradient-angle: 360deg;
+}
 }

@@ -18,6 +18,7 @@
             <img src="img/logo.svg" alt="Logo del Restaurante"></a>
         <nav>
             <a href="./index.html#main-header">Inicio</a>
+            <a href="./index.html#historia">Historia</a>
             <a href="./index.html#nuestra-carta">Carta</a>
             <a href="./index.html#galeria">Galería</a>
             <a href="#contacto" onclick="openModalContacto()">Contacto</a>
@@ -30,24 +31,26 @@
 
     <div class="modalGrande" id="modalContacto">
         <div class="modal-content-todo">
-            <div id="formulario">
-                <button class="close-btn" onclick="closeModalContacto()">X</button>
+            <div class="contact-container">
 
-                <h2>Hablanos</h2>
-                <form id="reservationForm">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" placeholder="Nombre y apellidos" required>
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p><strong>Lunes a Jueves</strong><br>13:00 - 16:00 | 20:00 - 23:00</p>
+                    <p><strong>Martes</strong><br>13:00 - 16:00</p>
+                    <p><strong>Viernes a Domingo</strong><br>13:00 - 16:00 | 20:00 - 00:00</p>
+                </div>
 
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@Edelweiss.de" required>
-
-                    <label for="people">Mensaje:</label>
-
-                    <textarea name="" id="" cols="60" rows="15" style="resize: none; width: 100%; padding: 8px;"
-                        required></textarea>
-
-                    <button id="reserva-btn" type="submit"> Enviar</button>
-                </form>
+                <!-- Contacto -->
+                <div class="contacto">
+                    <h4>Número para reservar:</h4>
+                    <p style="margin: 20px;"><a href="tel:+34934227131">+34 934 227 131</a></p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.8446027348386!2d2.100085408224034!3d41.55109554349442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1732022287991!5m2!1ses!2ses"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -132,8 +135,8 @@
     <footer>
         <!-- Logo y Dirección -->
         <div class="info">
-            <div class="logo">Bellagio</div>
-            <p>Av. Onze de Setembre, 152, 08208<br>Sabadell, Barcelona</p>
+            <div class="logo">Edelweiss</div>
+            <p>Carrer del Pare Rodés, 4-10, 08208 <br> Sabadell, Barcelona</p>
         </div>
 
         <!-- Horarios -->
@@ -142,7 +145,6 @@
             <p><strong>Lunes a Jueves</strong><br>13:00 - 16:00 | 20:00 - 23:00</p>
             <p><strong>Martes</strong><br>13:00 - 16:00</p>
             <p><strong>Viernes a Domingo</strong><br>13:00 - 16:00 | 20:00 - 00:00</p>
-            <p><em>Lunes tarde y martes tarde cerrado</em></p>
         </div>
 
         <!-- Contacto -->
