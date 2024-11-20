@@ -23,8 +23,10 @@
         </nav>
     </header>
     <header id="scroll-header">
-        <a href="#main-header">
-            <img src="img/logo.svg" alt="Logo del Restaurante"></a>
+        <a href="#main-header" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="img/logo.svg" alt="Logo del Restaurante">
+            <p style="font-family: titulo; color: white; font-size: 3em; margin-top: 12px;">Edelweiss</p>
+        </a>
         <nav>
             <a href="./index.html#main-header">Inicio</a>
             <a href="./index.html#historia">Historia</a>
@@ -37,8 +39,9 @@
     <main>
         <!-- Sección principal (Hero) -->
         <section class="hero" id="inicio">
-            <a href="#nuestra-carta"><img src="img/logo.svg" alt="Logo"></a>
+            <h1 style="font-family: titulo; color: white; font-size: 8em; margin-top: 12px;">Edelweiss</h1>
 
+            <a href="#nuestra-carta"><img src="img/logo.svg" alt="Logo"></a>
             <h2>La comida tradicional alemana renovada</h2>
             <p>Disfruta de una experiencia única con ingredientes frescos y tradicionales.</p>
 
@@ -132,17 +135,11 @@
         <section class="historia" id="historia">
             <h2>Nuestra Historia</h2>
             <div id="historiaDiv">
-                <div id="historiaText">
-                    <p>Edelweiss fue fundado en 1960 en el corazón de la ciudad, inspirado en la rica herencia culinaria
-                        de
-                        Alemania y
-                        la belleza de sus paisajes alpinos. Desde sus inicios, nuestro restaurante ha sido un refugio
-                        para
-                        los
-                        amantes de
-                        la auténtica cocina alemana, ofreciendo una experiencia gastronómica que celebra la tradición y
-                        la
-                        calidad.</p>
+                <div id="historiaText" style=" border: solid #F0D290 2px; border-radius: 10px; display: flex; align-items: center;">
+                    <p style="margin: 20px;">
+                        Edelweiss, fundado en 1998 por Karl Weiss en Múnich, rinde homenaje a las tradiciones bávaras
+                        con un ambiente rústico que evoca las montañas alemanas. Reconocido por su autenticidad y cálida
+                        hospitalidad, ofrece una experiencia única e inolvidable.</p>
 
 
                 </div>
@@ -381,7 +378,7 @@
     <footer>
         <!-- Logo y Dirección -->
         <div class="info">
-            <div class="logo">Edelweiss</div>
+            <div class="logo" style="font-family: titulo; font-size: 2em;">Edelweiss</div>
             <p>Carrer del Pare Rodés, 4-10, 08208 <br> Sabadell, Barcelona</p>
         </div>
 
@@ -404,7 +401,9 @@
             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
+        
     </footer>
+    <p style="text-align: end; background-color: #111111; padding-bottom: 10px; color: rgb(146, 146, 146);"> &copy 2023 Xacobo Barrera Cabodevila</p>
 
 </body>
 

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: titulo;
+  src: url(./fuentes/geraldine-personal-use.italic.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -224,11 +229,11 @@ nav a:hover {
 }
 
 #nuestra-carta h2 {
-  font-size: 2em;
-  color: #2e2e2e;
+  font-size: 4em;
+  color: #878787;
   /* Color dorado para el título */
   margin-bottom: 40px;
-  font-family: 'Georgia', serif;
+  font-family: titulo, serif;
 
 }
 
@@ -269,12 +274,12 @@ nav a:hover {
 }
 
 .menu-column p {
-  font-size: 1.2em;
+  font-size: 3em;
   color: #E8B607;
   border-bottom: 1px solid #444;
   padding-bottom: 5px;
   margin: 20px 0 10px;
-  font-family: 'Georgia', serif;
+  font-family: titulo, serif;
 
   margin-bottom: 50px;
   
@@ -288,11 +293,6 @@ nav a:hover {
   font-size: 1em;
   font-family: Arial, sans-serif;
   color: #878787;
-}
-
-.menu-item .price {
-  color: #E8B607;
-  /* Color dorado para el precio */
 }
 
 /* Líneas punteadas */
@@ -818,4 +818,10 @@ video{
 100% {
   --gradient-angle: 360deg;
 }
+}
+
+
+.price{
+  color: #E8B607;
+  font-weight: bold;
 }
